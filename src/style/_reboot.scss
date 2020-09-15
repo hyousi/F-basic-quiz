@@ -1,3 +1,5 @@
+@use "variables";
+
 body,
 html {
   margin: 0;
@@ -6,10 +8,10 @@ html {
 }
 
 body {
-  font-family: $font-family-base;
-  color: $color-base;
-  background-color: $body-bg;
-  line-height: $line-height-base;
+  font-family: variables.$font-family-base;
+  color: variables.$color-base;
+  background-color: variables.$body-bg;
+  line-height: variables.$line-height-base;
 }
 
 * {
@@ -24,9 +26,9 @@ ol {
 }
 
 a {
-  color: $link-color;
+  color: variables.$link-color;
 
   &:hover {
-    color: $link-hover-color;
+    color: variables.$link-hover-color;
   }
 }
