@@ -1,0 +1,8 @@
+@use 'variables';
+
+.app {
+  margin: 0 auto 4em auto;
+  width: 70%;
+  background-color: variables.$white;
+  padding: 0 2em 2em 2em;
+}

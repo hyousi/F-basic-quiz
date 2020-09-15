@@ -1,0 +1,14 @@
+@use "variables";
+
+.header {
+  text-align: center;
+  margin-top: variables.$image-size * 0.8;
+
+  img {
+    margin-top: variables.$image-size * -0.5;
+  }
+
+  h2 {
+    text-transform: uppercase;
+  }
+}

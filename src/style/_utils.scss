@@ -1,0 +1,10 @@
+@use "variables";
+
+.rounded {
+  border-radius: 50%;
+}
+
+.line-break {
+  border: 2px solid variables.$gray-light;
+  margin: 1em 0;
+}

@@ -1,0 +1,29 @@
+@use "variables";
+
+.section {
+  margin-bottom: 2em;
+
+  &-title {
+    color: variables.$primary-color;
+  }
+}
+
+.education {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1em;
+
+  &-year {
+    width: 10%;
+  }
+
+  & > :last-child {
+    background-color: variables.$gray-light;
+    width: 100%;
+    padding: 0 1em;
+  }
+
+  &-title {
+    font-weight: bold;
+  }
+}
