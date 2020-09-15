@@ -1,4 +1,4 @@
-function renderHeader(name, age, avatar) {
+function renderHeader({ name, age, avatar }) {
   const headerDOM = document.createElement("header");
   headerDOM.className = "header";
 

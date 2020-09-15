@@ -1,13 +1,22 @@
 import "./style/index.scss";
 import renderHeader from "./components/Header";
-import { getUser } from "./utils/async";
+import { getEducations, getUser } from "./utils/async";
+import {
+  renderDescSection,
+  renderEducationSection,
+} from "./components/Content";
 
-function main() {
-  getUser(1).then((user) => {
-    const { name, age, avatar } = user;
-    const headerDOM = renderHeader(name, age, avatar);
-    document.getElementById("root").append(headerDOM);
-  });
+async function main() {
+  const root = document.getElementById("root");
+  root.innerHTML = "<main class='main'></main>";
+
+  const user = await getUser(1);
+  const educations = await getEducations();
+
+  document.getElementById("root").prepend(renderHeader(user));
+  document.querySelector(".main").append(renderDescSection(user.description));
+  document.querySelector(".main").append(renderEducationSection(educations));
 }
 
+// TODO: subscribe data
 main();
