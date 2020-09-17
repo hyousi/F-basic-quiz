@@ -7,6 +7,7 @@ import {
 } from "./components/Content";
 
 async function main() {
+  // TODO feedback: 不建议静态HTML的渲染放在js里去处理
   const root = document.getElementById("root");
   root.innerHTML = "<main class='main'></main>";
 

@@ -1,4 +1,5 @@
 function renderHeader({ name, age, avatar }) {
+  // TODO feedback: 可以通过添加html的方式，每次子元素都createElement过于复杂
   const headerDOM = document.createElement("header");
   headerDOM.className = "header";
 
